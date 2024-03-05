@@ -35,4 +35,4 @@ def init_logging(app, logger_name: str):
     )
     for handler in app.logger.handlers:
         handler.setFormatter(formatter)
-    app.logger.info("%Y-%m-%d %H:%M:%S %z", "INFO", f"{__name__}", "Logging handler established")
+    app.logger.info("%Y-%m-%d %H:%M:%S %z", "INFO", f"{__name__}", "Logging handler established")   # noqa: E501
